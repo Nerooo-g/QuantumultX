@@ -2407,7 +2407,7 @@ function get_emoji(emojip, sname) {
     "🇫🇷": ["FR", "France", "法国", "法國", "巴黎"],
     "🇷🇪": ["留尼汪", "留尼旺", "Réunion", "Reunion"],
     "🇨🇼": ["库拉索", "庫拉索", "Curaçao"],
-    "🇬🇧": ["UK", "GB ", "England", "United Kingdom", "英国", "伦敦", "英"],
+    "🇬🇧": ["UK", "GB ", "England", "United Kingdom", "英国", "伦敦", "英", "Great Britain"],
     "🇲🇴": ["MO", "Macao","Macau", "MAC", "澳门", "澳門", "CTM"],
     "🇰🇿": ["哈萨克斯坦", "哈薩克斯坦", "Kazakhstan"],
     "🇱🇦": ["老挝","老挝", "Laos"],
@@ -2491,7 +2491,7 @@ function get_emoji(emojip, sname) {
   }
     str1 = JSON.stringify(Lmoji)
     aa = JSON.parse(str1)
-    bb = JSON.parse(str1.replace(/🇹🇼/g, " 🇨🇳"))
+    bb = JSON.parse(str1.replace(/🇹🇼/g, "🇼🇸"))
     var cnt = emojip ==1? aa:bb;
     var flag = 0;
     for (var key in cnt) {
